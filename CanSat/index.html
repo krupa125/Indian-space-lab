@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CanSat Ground Control Software</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet"
+href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+</head>
+
+<body>
+
+<header>
+
+<h1>CanSat Ground Control Software</h1>
+
+<div class="controls">
+
+<button>Start</button>
+<button>Stop</button>
+<button>Export CSV</button>
+<button>Export Graph</button>
+<button>Sync Time</button>
+<button>Reset</button>
+
+</div>
+
+</header>
+
+<div class="container">
+
+<div class="left">
+
+<h2>Telemetry</h2>
+
+<p>Altitude : <span id="alt">0</span> m</p>
+
+<p>Temperature :
+<span id="temp">0</span> °C</p>
+
+<p>Pressure :
+<span id="press">0</span> Pa</p>
+
+<p>Battery :
+<span id="battery">100</span>%</p>
+
+<p>Error Code :
+<span id="error">0000</span></p>
+
+</div>
+
+<div class="center">
+
+<canvas id="chart"></canvas>
+
+</div>
+
+<div class="right">
+
+<div id="map"></div>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
